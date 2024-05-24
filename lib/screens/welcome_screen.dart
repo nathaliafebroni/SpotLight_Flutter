@@ -47,8 +47,16 @@ class WelcomeScreen extends StatelessWidget {
               alignment: Alignment.bottomRight,
               child: Row(
                 children: [
-                 Expanded(child: WelcomeButton(),),
-                 Expanded(child: WelcomeButton(),),
+                 Expanded(
+                  child: WelcomeButton(
+                    buttonText: 'Sign in',
+                  ),
+                  ),
+                 Expanded(
+                  child: WelcomeButton(
+                    buttonText: 'Cadastre-se',
+                  ),
+                  ),
                 ],
               ),
             ),
