@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:spotlight/screens/signin_screen.dart';
+import 'package:spotlight/screens/signup_screen.dart';
 import 'package:spotlight/widgets/custom_scaffold.dart';
 import 'package:spotlight/widgets/welcome_button.dart';
 
@@ -50,11 +52,13 @@ class WelcomeScreen extends StatelessWidget {
                  Expanded(
                   child: WelcomeButton(
                     buttonText: 'Sign in',
+                    onTap: SignInScreen(),
                   ),
                   ),
                  Expanded(
                   child: WelcomeButton(
                     buttonText: 'Cadastre-se',
+                    onTap: SignUpScreen(),
                   ),
                   ),
                 ],

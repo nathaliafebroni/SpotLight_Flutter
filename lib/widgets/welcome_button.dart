@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:spotlight/screens/signin_screen.dart';
 
 class WelcomeButton extends StatelessWidget {
-  const WelcomeButton({super.key, this.buttonText});
+  const WelcomeButton({super.key, this.buttonText, this.onTap});
   final String? buttonText;
+  final Widget? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,7 @@ class WelcomeButton extends StatelessWidget {
         Navigator.push(
           context, 
           MaterialPageRoute(
-            builder: (e) => const SignUpScreen(),
+            builder: (e) => onTap!,
             ),
           );
       },
