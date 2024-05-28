@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:spotlight/screens/signin_screen.dart';
 import 'package:spotlight/screens/signup_screen.dart';
+import 'package:spotlight/theme/theme.dart';
 import 'package:spotlight/widgets/custom_scaffold.dart';
 import 'package:spotlight/widgets/welcome_button.dart';
 
@@ -43,24 +44,26 @@ class WelcomeScreen extends StatelessWidget {
           ),
         ),),
           )),
-          const Flexible(
+          Flexible(
             flex: 1,
             child: Align(
               alignment: Alignment.bottomRight,
               child: Row(
                 children: [
-                 Expanded(
+                 const Expanded(
                   child: WelcomeButton(
                     buttonText: 'Sign in',
                     onTap: SignInScreen(),
                     color: Colors.transparent,
+                    textColor: Colors.white,
                   ),
                   ),
                  Expanded(
                   child: WelcomeButton(
                     buttonText: 'Cadastre-se',
-                    onTap: SignUpScreen(),
-                    color: Color.fromARGB(255, 63, 59, 59),
+                    onTap: const SignUpScreen(),
+                    color: Colors.white,
+                    textColor: lightColorScheme.primary,
                   ),
                   ),
                 ],
