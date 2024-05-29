@@ -8,9 +8,7 @@ const lightColorScheme = ColorScheme(
   secondary: Color.fromARGB(255, 54, 54, 54),  
   onSecondary: Color(0xFFFFFFFF), 
   error: Color.fromARGB(255, 207, 51, 51), 
-  onError: Color(0xFFFFFFFF), 
-  background: Color(0XFFFCFDF6),
-  onBackground: Color(0xFF1A1C18),
+  onError: Color(0xFFFFFFFF),
   shadow: Color(0xFF000000),
   outlineVariant: Color(0xFFC2C8BC),
   surface: Color(0xFFF9FAF3), 
@@ -24,9 +22,7 @@ const lightColorScheme = ColorScheme(
   secondary: Color.fromARGB(255, 54, 54, 54), 
   onSecondary: Color(0xFFFFFFFF), 
   error: Color.fromARGB(255, 207, 51, 51), 
-  onError: Color(0xFFFFFFFF), 
-  background: Color(0XFFFCFDF6),
-  onBackground: Color(0xFF1A1C18),
+  onError: Color(0xFFFFFFFF),
   shadow: Color(0xFF000000),
   outlineVariant: Color(0xFFC2C8BC),
   surface: Color(0xFFF9FAF3), 
@@ -39,15 +35,15 @@ const lightColorScheme = ColorScheme(
   colorScheme: lightColorScheme,
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
-      backgroundColor: MaterialStateProperty.all<Color>(
+      backgroundColor: WidgetStateProperty.all<Color>(
         lightColorScheme.error, 
       ),
       foregroundColor:
-          MaterialStateProperty.all<Color>(Colors.white),
-      elevation: MaterialStateProperty.all<double>(5.0),
-      padding: MaterialStateProperty.all<EdgeInsets>(
+          WidgetStateProperty.all<Color>(Colors.white),
+      elevation: WidgetStateProperty.all<double>(5.0),
+      padding: WidgetStateProperty.all<EdgeInsets>(
           const EdgeInsets.symmetric(horizontal: 20, vertical: 18)),
-      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+      shape: WidgetStateProperty.all<RoundedRectangleBorder>(
         RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),

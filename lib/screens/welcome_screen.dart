@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:spotlight/screens/signin_screen.dart';
 import 'package:spotlight/screens/signup_screen.dart';
 import 'package:spotlight/theme/theme.dart';
