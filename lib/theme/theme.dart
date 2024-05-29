@@ -7,7 +7,7 @@ const lightColorScheme = ColorScheme(
   onPrimary: Color(0xFFFFFFFF), 
   secondary: Color.fromARGB(255, 54, 54, 54),  
   onSecondary: Color(0xFFFFFFFF), 
-  error: Color(0xFFBA1A1A), 
+  error: Color.fromARGB(255, 207, 51, 51), 
   onError: Color(0xFFFFFFFF), 
   background: Color(0XFFFCFDF6),
   onBackground: Color(0xFF1A1C18),
@@ -23,7 +23,7 @@ const lightColorScheme = ColorScheme(
   onPrimary: Color(0xFFFFFFFF), 
   secondary: Color.fromARGB(255, 54, 54, 54), 
   onSecondary: Color(0xFFFFFFFF), 
-  error: Color(0xFFBA1A1A), 
+  error: Color.fromARGB(255, 207, 51, 51), 
   onError: Color(0xFFFFFFFF), 
   background: Color(0XFFFCFDF6),
   onBackground: Color(0xFF1A1C18),
@@ -40,16 +40,16 @@ const lightColorScheme = ColorScheme(
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
       backgroundColor: MaterialStateProperty.all<Color>(
-        lightColorScheme.primary, // Slightly darker shade for the button
+        lightColorScheme.error, 
       ),
       foregroundColor:
-          MaterialStateProperty.all<Color>(Colors.white), // text color
-      elevation: MaterialStateProperty.all<double>(5.0), // shadow
+          MaterialStateProperty.all<Color>(Colors.white),
+      elevation: MaterialStateProperty.all<double>(5.0),
       padding: MaterialStateProperty.all<EdgeInsets>(
           const EdgeInsets.symmetric(horizontal: 20, vertical: 18)),
       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
         RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16), // Adjust as needed
+          borderRadius: BorderRadius.circular(16),
         ),
       ),
     ),
