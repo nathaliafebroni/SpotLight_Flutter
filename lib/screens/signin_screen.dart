@@ -43,7 +43,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                      'Bem Vindo de Volta',
+                      'Bem Vindo de volta',
                       style: TextStyle(
                         fontSize: 30.0,
                         fontWeight: FontWeight.w900,

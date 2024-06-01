@@ -30,12 +30,14 @@ class WelcomeScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 45.0,
                   fontWeight: FontWeight.w600,
+                  color: Colors.white
                 )),
               TextSpan(
                 text: 
-                '\nInsira dados pessoais em sua conta',
+                '\nCompre ingressos para seus espetáculos favoritos',
                 style: TextStyle(
                   fontSize: 20,
+                  color: Colors.white
                   //height: 0,
                 ))
             ],

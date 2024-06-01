@@ -162,13 +162,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             activeColor: lightColorScheme.primary,
                           ),
                           const Text(
-                            'Eu concordo com o processamento dos',
+                            'Eu concordo com o uso dos',
                             style: TextStyle(
                               color: Colors.black45,
                             ),
                           ),
                           Text(
-                            'Dados pessoais',
+                            ' Dados pessoais',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: lightColorScheme.primary,
