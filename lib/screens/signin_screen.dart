@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:spotlight/screens/forget_password_screen.dart';
 import 'package:spotlight/screens/signup_screen.dart';
 import 'package:spotlight/theme/theme.dart';
 import 'package:spotlight/widgets/custom_scaffold.dart';
@@ -138,6 +139,14 @@ class _SignInScreenState extends State<SignInScreen> {
                             ],
                           ),
                           GestureDetector(
+                            onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (e) => const ForgetPasswordScreen(),
+                                  ),
+                                );
+                              },
                             child: Text(
                               'Esqueceu a senha?',
                               style: TextStyle(
